@@ -1,12 +1,8 @@
-
 h1{
     font-size: 20px;
     color: crimson
 }
 
-header p{
-    color: blue
-}
 .verde{
     font-size: 15px;
     color: chartreuse
@@ -14,4 +10,18 @@ header p{
 
 .grande{
     font-size: 50px;
+}
+
+ul::before{
+    content: "Aqui empieza una lista";
+    color: sienna;
+}
+
+ul::after{
+    content: "Aqui termina una lista";
+    color: yellow;
+}
+
+body>p:nth-of-type(1){
+    color: green;
 }
