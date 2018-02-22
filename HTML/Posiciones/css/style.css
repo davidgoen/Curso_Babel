@@ -1,0 +1,50 @@
+*,
+*::before, *::after,
+*:before, *:afer {
+box-sizing : border-box;
+}
+
+div{
+    width: 90%;
+    margin: 2rem auto;
+    border: 1px solid grey;
+    overflow: hidden;
+}
+
+div.flotar after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*p:not(:last-child) {*/
+
+.flotar p {
+    width: 18%;
+    float: left;
+    margin-right: 3%;
+    background-color: salmon;
+    padding: 2rem 1rem;
+}
+
+div.inline after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.inline{
+    width: 90%;
+    margin: 2rem auto;
+    border: 1px solid grey;
+}
+
+
+.inline p {
+    width: 18%;
+    margin-right: 3%;
+    background-color: salmon;
+    padding: 2rem 1rem;
+    display: inline-block;
+    margin: -5px;
+}
