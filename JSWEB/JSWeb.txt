@@ -1,0 +1,5 @@
+
+Crea una funcion sin nombre y en el mismo m
+(function (){
+
+})();
