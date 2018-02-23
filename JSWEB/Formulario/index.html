@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Javascript Basico</title>
+    <script src="./app/main.js"></script><!--Hay que esperar a que cargue el DOM de la toda la pagina, se pone el evento en el js que espera la carga-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de tareas</h1>
+        </header>
+        <article>
+            <!--Etiqueta, el for de la etiqueta es el id del elemento-->
+            <label for="nombre">Nombre:</label>
+
+            <input type="text" name="nombre" id="nombre" placeholder="Dime tu nombre">
+
+            <button id="btnRegistrar">Registrarme</button>
+
+            <div id="resultados"></div>
+        </article>
+        <article>
+            <label for="tarea">Tarea:</label>
+
+            <input type="text" name="tarea" id="tarea" placeholder="Dime una tarea">
+    
+            <button id="btnAdd">Añadir</button>
+
+            <div id="resultadoTarea"></div>
+        </article>
+        <footer>
+            <address>David Gonzalez Endrinal</address>
+        </footer>
+    </div>
+</body>
+</html>
