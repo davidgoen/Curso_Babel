@@ -1,0 +1,36 @@
+SEO -  Tecnicas para mejorar la presencia en la web. Es lo mismo que decir posicionamiento en Google.
+    Google indexa con "spyder" que indexan las paginas extrayendo informacion
+    Angular universal es que el servidor a parte de tener la version para clientes tiene una version renderizada para entregarsela a la 
+    araña de google. Esto depende del servidor, a dia de hoy solo hay un lenguaje capaz de hacerlo: Node
+
+Angular languaje services Desinstalar si va mal la maquina
+nvm -> permite obtener versiones mas antiguas de node
+Transpilar pasar el lenguaje de alto nivel a otro de alto nivel, de node a javascript, es el proceso de empaquetado de la aplicacion
+
+Crear un nuevo proyecto en Angular:
+ng new --routing --prefix bbl base-app
+
+El proyecto creado esta en el repositorio.
+Dentro de la aplicacion se pone: "ng serve"
+
+package.json -> dependencias de todo lo que se ha instalado ahi estan los comandos que se usan en ng que puedes modificar para iniciar
+de forma personalizada
+
+
+Import:
+Via enlaces simbolicos
+from '@angular/platform-browser-dynamic'; ya sabe que lo tiene package.json
+los otros imports es pork no estan en el package.json
+
+Via Rutas
+import { AppModule } from './app/app.module';
+
+"npm install bootstrap" dentro del proyecto donde este la carpeta de package.json
+
+En angular-cli.json en el array de style se pone el css de bootstrap:
+"styles": [
+        "styles.css",
+        "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      ],
+SIEMPRE LOS ESTILOS DE LA LIBRERIA Y LUEGO EL ESTILO PROPIO
+Tambien se puede hacer el import de bootstrap directamente en el style.css con el @import arriba del todo
